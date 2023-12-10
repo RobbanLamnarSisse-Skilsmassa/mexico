@@ -13,6 +13,8 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            position: relative;
+            padding-bottom: 50px; /* Space for the watermark */
         }
 
         header {
@@ -51,6 +53,18 @@
         button:hover {
             background-color: #2980b9;
         }
+
+        .watermark {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+            padding: 10px;
+            font-size: 1.2em;
+            color: #333;
+        }
     </style>
 </head>
 
@@ -76,12 +90,13 @@
 
     <script>
         function contactUs() {
-            alert("Please call us at 123-456-7890 to schedule a consultation.");
+            alert("Don't contact us");
         }
     </script>
+
+    <div class="watermark">mexicobram</div>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </body>
 
 </html>
-
